@@ -1,0 +1,8 @@
+8fc6418ed2ef70add222a61431783788 *DESCRIPTION
+efad1ef4c5943ca1ec766c765af78bc2 *NAMESPACE
+7314a22783fc04246b016857bafa3471 *R/functions.R
+104d0a1744a11ce0a6978debe4ad03c3 *man/corrected_meta.Rd
+9a186749ca937a389ebc3abd0715894d *man/pval_plot.Rd
+d8a341eac5e1087ade317367ad82f3df *man/significance_funnel.Rd
+e2251edf984ef545aed50827d4990987 *man/svalue.Rd
+35b8c162a997facfd18bf5e260c4cb6e *tests/testthat/testthat.R
