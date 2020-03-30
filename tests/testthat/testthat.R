@@ -2,7 +2,7 @@ library(testthat)
 #library(MetaUtility)
 library(devtools)
 library(metafor)
-library(dplyr)
+
 
 # helper fn for simulating meta-analysis with publication bias
 
@@ -175,72 +175,6 @@ test_that("svalue #1", {
   }
 } )
 
-# bookmark
-# do svalue and corrected_meta agree? (#2)
-test_that("svalue #1", {
-
-  dat = sim_data( data.frame( k = 50,
-                            per.cluster = 5,
-                            mu = -0.5,
-                            V = 0.25,
-                            V.gam = 0,
-                            sei.min = 0.1,
-                            sei.max = 1,
-                            eta = 2 ) )
-
-  # uncorrected meta
-  m0 = corrected_meta( yi = dat$yi,
-                  vi = dat$vi,
-                  eta = 1,
-                  model = "robust" )
-
-  # choose q to be between worst-case CI limit and actual CI limit so that
-  #  both s-values will be well-defined
-  meta.worst =  corrected_meta( yi = dat$yi,  # not flipped
-                                vi = dat$vi,
-                                eta = 2,
-                                model = "robust" )
-
-  # use upper limit since this meta has negative point estimate
-  q = mean( c(m0$hi, meta.worst$hi) )
-
-
-
-  for ( .CI.level in c(.8, .95) ) {
-    for ( .small in c(TRUE, FALSE) ) {
-
-      svals = svalue( yi = dat$yi,
-                      vi = dat$vi,
-                      q = q,
-                      model = "robust",
-                      CI.level = 0.95,
-                      small = .small )$svals
-
-      # estimate should be exactly equal to q when eta = sval.est
-      meta = corrected_meta( yi = dat$yi,
-                             vi = dat$vi,
-                             eta = as.numeric(svals["sval.est"]),
-                             model = "robust",
-                             selection.tails = 1,
-                             CI.level = 0.95,
-                             small = .small )
-      expect_equal( meta$est, q, tol = 0.001 )
-
-      # and CI upper limit should be exactly 0 when eta = sval.ci
-      meta = corrected_meta( yi = dat$yi,
-                             vi = dat$vi,
-                             eta = as.numeric(svals["sval.ci"]),
-                             model = "robust",
-                             selection.tails = 1,
-                             CI.level = 0.95,
-                             small = .small )
-
-      expect_equal( meta$hi, q, tol = 0.001 )
-
-    }
-  }
-} )
-
 
 
 # # is worst-case meta correct for both 1-tailed and 2-tailed selection?
@@ -329,6 +263,7 @@ test_that( "svalue #4", {
           eta.grid = seq(1,10,1),
           CI.level = 0.95,
           small = FALSE )
+
 
 } )
 
