@@ -4,9 +4,18 @@
 \alias{svalue}
 \title{Severity of publication bias needed to "explain away" results}
 \usage{
-svalue(yi, vi, q, clustervar = 1:length(yi), model,
-  alpha.select = 0.05, eta.grid.hi = 200, favor.positive,
-  CI.level = 0.95, small = TRUE)
+svalue(
+  yi,
+  vi,
+  q,
+  clustervar = 1:length(yi),
+  model,
+  alpha.select = 0.05,
+  eta.grid.hi = 200,
+  favor.positive,
+  CI.level = 0.95,
+  small = TRUE
+)
 }
 \arguments{
 \item{yi}{A vector of point estimates to be meta-analyzed. Their signs should be coded such that publication bias is

@@ -4,11 +4,21 @@
 \alias{significance_funnel}
 \title{Make significance funnel plot}
 \usage{
-significance_funnel(yi, vi, xmin = min(yi), xmax = max(yi), ymin = 0,
-  ymax = max(sqrt(vi)), xlab = "Point estimate",
-  ylab = "Estimated standard error", favor.positive = NA,
-  est.all = NA, est.N = NA, alpha.select = 0.05,
-  plot.pooled = TRUE)
+significance_funnel(
+  yi,
+  vi,
+  xmin = min(yi),
+  xmax = max(yi),
+  ymin = 0,
+  ymax = max(sqrt(vi)),
+  xlab = "Point estimate",
+  ylab = "Estimated standard error",
+  favor.positive = NA,
+  est.all = NA,
+  est.N = NA,
+  alpha.select = 0.05,
+  plot.pooled = TRUE
+)
 }
 \arguments{
 \item{yi}{A vector of point estimates to be meta-analyzed.}

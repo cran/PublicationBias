@@ -4,9 +4,18 @@
 \alias{corrected_meta}
 \title{Estimate publication bias-corrected meta-analysis}
 \usage{
-corrected_meta(yi, vi, eta, clustervar = 1:length(yi), model,
-  selection.tails = 1, favor.positive, alpha.select = 0.05,
-  CI.level = 0.95, small = TRUE)
+corrected_meta(
+  yi,
+  vi,
+  eta,
+  clustervar = 1:length(yi),
+  model,
+  selection.tails = 1,
+  favor.positive,
+  alpha.select = 0.05,
+  CI.level = 0.95,
+  small = TRUE
+)
 }
 \arguments{
 \item{yi}{A vector of point estimates to be meta-analyzed.}
@@ -91,7 +100,7 @@ performing analyses. The corrected estimate will be reported based on the recode
  # range of parameters to try (more dense at the very small ones)
  eta.list = as.list( c( 200, 150, 100, 50, 40, 30, 20, rev( seq(1,15,1) ) ) )
  res.list = lapply( eta.list, function(x) {
-                     cat("\\n Working on eta = ", x)
+                     cat("\n Working on eta = ", x)
                      return( corrected_meta( yi = dat$yi,
                                              vi = dat$vi,
                                              eta = x,
