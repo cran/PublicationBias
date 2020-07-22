@@ -27,7 +27,7 @@ corrected_meta(
 \item{clustervar}{A character, factor, or numeric vector with the same length as yi. Unique values should indicate
 unique clusters of point estimates. By default, assumes all point estimates are independent.}
 
-\item{model}{"fixed" for fixed-effects (a.k.a. "common-effects") or "robust" for robust random-effects}
+\item{model}{"fixed" for fixed-effects (a.k.a. "common-effect") or "robust" for robust random-effects}
 
 \item{selection.tails}{1 (for one-tailed selection, recommended for its conservatism) or 2 (for two-tailed selection)}
 
@@ -49,7 +49,7 @@ and an indicator for whether the point estimates' signs were recoded (\code{sign
 }
 \description{
 For a chosen ratio of publication probabilities, \code{eta}, estimates a publication bias-corrected pooled point
-estimate and confidence interval per Mathur & VanderWeele (2020). Model options include fixed-effects (a.k.a. "common-effects"), robust independent, and robust
+estimate and confidence interval per Mathur & VanderWeele (2020). Model options include fixed-effects (a.k.a. "common-effect"), robust independent, and robust
 clustered specifications.
 }
 \details{
@@ -125,5 +125,5 @@ performing analyses. The corrected estimate will be reported based on the recode
    theme_classic()
 }
 \references{
-1. Mathur MB & VanderWeele TJ (2020). Sensitivity analysis for publication bias in meta-analyses. Preprint available at https://osf.io/s9dp6/.
+1. Mathur MB & VanderWeele TJ (2020). Sensitivity analysis for publication bias in meta-analyses. \emph{Journal of the Royal Statistical Society, Series C.} Preprint available at https://osf.io/s9dp6/.
 }

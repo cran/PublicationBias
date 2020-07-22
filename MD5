@@ -1,8 +1,8 @@
-238a76026fa163ca040be7a2a273eecf *DESCRIPTION
+0648dfcbc20f6d80be917cc3b9226f4b *DESCRIPTION
 efad1ef4c5943ca1ec766c765af78bc2 *NAMESPACE
-64f09ffd158797b4148ae8759ab58f40 *R/functions.R
-e497e75271f3b45e0ba7b39f3fd5a1d7 *man/corrected_meta.Rd
-2331b840a1617feabcbf42a5e04e4338 *man/pval_plot.Rd
-fd5535b3595c25d369f68ba647427ccc *man/significance_funnel.Rd
-bb7e791c2bc8869d03904e0344ff574b *man/svalue.Rd
-35b8c162a997facfd18bf5e260c4cb6e *tests/testthat/testthat.R
+8a268345ce7b9c3c1dce7c3df1232e47 *R/functions.R
+403f412533d44f9a2c7f33ceb0720774 *man/corrected_meta.Rd
+0d9143cf4fbd1b312cfbc6c51d59d19e *man/pval_plot.Rd
+0260a3112b7e37142b50f94b45ddcf3c *man/significance_funnel.Rd
+162d9465a32548debea1a37894ef52e8 *man/svalue.Rd
+9c4baa05652e09944b3d40a56308fc08 *tests/testthat/testthat.R

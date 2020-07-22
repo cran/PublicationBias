@@ -1,7 +1,7 @@
 Package: PublicationBias
 Type: Package
 Title: Sensitivity Analysis for Publication Bias in Meta-Analyses
-Version: 2.1.0
+Version: 2.2.0
 Author: Maya B. Mathur, Tyler J. VanderWeele
 Maintainer: Maya B. Mathur <mmathur@stanford.edu>
 Description: Performs sensitivity analysis for publication bias in meta-analyses (per Mathur & VanderWeele, 2020 [<https://osf.io/s9dp6>]).
@@ -17,6 +17,6 @@ RdMacros: Rdpack
 LazyData: true
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2020-07-09 14:37:59 UTC; mmathur
+Packaged: 2020-07-22 19:06:36 UTC; mmathur
 Repository: CRAN
-Date/Publication: 2020-07-09 15:10:02 UTC
+Date/Publication: 2020-07-22 19:20:02 UTC
