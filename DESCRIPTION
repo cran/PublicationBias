@@ -1,10 +1,12 @@
 Package: PublicationBias
 Title: Sensitivity Analysis for Publication Bias in Meta-Analyses
-Version: 2.3.0
+Version: 2.4.0
 Authors@R: c(
-    person("Mika", "Braginsky", email = "mika.br@gmail.com", role = c("aut", "cre")),
+    person("Mika", "Braginsky", email = "mika.br@gmail.com", role = c("aut")),
     person("Maya", "Mathur", email = "mmathur@stanford.edu", role = c("aut")),
-    person("Tyler J.", "VanderWeele", email = "tvanderw@hsph.harvard.edu", role = c("aut")))
+    person("Tyler J.", "VanderWeele", email = "tvanderw@hsph.harvard.edu", role = c("aut")),
+    person("Peter", "Solymos", email = "peter@analythium.io", role = c("cre", "ctb"), comment = c(ORCID = "0000-0001-7337-1740"))
+    )
 Description: Performs sensitivity analysis for publication bias in meta-analyses
     (per Mathur & VanderWeele, 2020 [<doi:10.31219/osf.io/s9dp6>]). These analyses
     enable statements such as: "For publication bias to shift the observed point
@@ -16,9 +18,9 @@ Description: Performs sensitivity analysis for publication bias in meta-analyses
     by conducting a standard meta-analysis of only the negative and
     "nonsignificant" studies.
 License: GPL-2
-URL: https://github.com/mayamathur/PublicationBias,
-        https://mayamathur.github.io/PublicationBias/
-BugReports: https://github.com/mayamathur/PublicationBias/issues
+URL: https://github.com/mathurlabstanford/PublicationBias,
+        https://mathurlabstanford.github.io/PublicationBias/
+BugReports: https://github.com/mathurlabstanford/PublicationBias/issues
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
 Imports: dplyr, ggplot2, glue, lifecycle, metabias, metafor, stats,
@@ -28,10 +30,11 @@ RoxygenNote: 7.2.3
 RdMacros: Rdpack
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2023-01-19 20:13:27 UTC; mbraginsky
-Author: Mika Braginsky [aut, cre],
+Packaged: 2023-08-18 19:49:30 UTC; Peter
+Author: Mika Braginsky [aut],
   Maya Mathur [aut],
-  Tyler J. VanderWeele [aut]
-Maintainer: Mika Braginsky <mika.br@gmail.com>
+  Tyler J. VanderWeele [aut],
+  Peter Solymos [cre, ctb] (<https://orcid.org/0000-0001-7337-1740>)
+Maintainer: Peter Solymos <peter@analythium.io>
 Repository: CRAN
-Date/Publication: 2023-01-19 23:20:09 UTC
+Date/Publication: 2023-08-18 23:42:32 UTC

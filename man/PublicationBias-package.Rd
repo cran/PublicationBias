@@ -14,17 +14,18 @@ Performs sensitivity analysis for publication bias in meta-analyses (per Mathur 
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/mayamathur/PublicationBias}
-  \item \url{https://mayamathur.github.io/PublicationBias/}
-  \item Report bugs at \url{https://github.com/mayamathur/PublicationBias/issues}
+  \item \url{https://github.com/mathurlabstanford/PublicationBias}
+  \item \url{https://mathurlabstanford.github.io/PublicationBias/}
+  \item Report bugs at \url{https://github.com/mathurlabstanford/PublicationBias/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Mika Braginsky \email{mika.br@gmail.com}
+\strong{Maintainer}: Peter Solymos \email{peter@analythium.io} (\href{https://orcid.org/0000-0001-7337-1740}{ORCID}) [contributor]
 
 Authors:
 \itemize{
+  \item Mika Braginsky \email{mika.br@gmail.com}
   \item Maya Mathur \email{mmathur@stanford.edu}
   \item Tyler J. VanderWeele \email{tvanderw@hsph.harvard.edu}
 }

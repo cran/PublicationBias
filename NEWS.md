@@ -1,3 +1,8 @@
+# PublicationBias 2.4.0
+
+* Check for negative (impossible svalues).
+* New package maintainer: Peter Solymos.
+
 # PublicationBias 2.3.0
 
 * Function and argument names are consistent with related packages.
